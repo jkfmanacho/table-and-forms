@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Table</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Numans&family=Parkinsans:wght@300..800&display=swap');
+            table {
+                width: 600px;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                font-family: 'Numans', sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            h1 {
+                font-family: 'Coustard', serif;
+                color: #333;
+            }
+            .header {
+                background-color: #9F2945;
+                color: white;
+            }
+            .info {
+                background-color: #FEC7B4;
+            }
+            .item-row {
+                background-color: #FDFBEE;
+            }
+        </style>
+    </head>
+    <body>
+    <div align="center">
+        <table>
+            <thead style="background-color: #FFF3C7;">
+                <tr>
+                    <td colspan="4" align="center"><h1 style="text-align: center;">Invoice Tabular Data</h1></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 1px; background-color: #F7418F;">
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="header">
+                    <td colspan="3"><b>Invoice #123456789</b></td>
+                    <td colspan="2"><b>14 January 2025</b></td>
+                </tr>
+                <tr class="info">
+                    <td colspan="2">
+                        <b>Pay to:</b>
+                        <br>Acme Billing Co.
+                        <br>123 Main St.
+                        <br>Cityville, NA 12345
+                    </td>
+                    <td colspan="2">
+                        <b>Customer:</b>
+                        <br>John Smith
+                        <br>321 Willow Way
+                        <br>Southeast Northwestershire, MA 54321
+                    </td>
+                </tr>
+                <tr class="header">
+                    <th style="width: 170px; text-align: center;">Name / Description</th>
+                    <th style="width: 5px; text-align: center;">Qty.</th>
+                    <th style="width: 7px; text-align: center;">@</th>
+                    <th style="text-align: right;">Cost</th>
+                </tr>
+                <tr class="item-row">
+                    <td>Paperclips</td>
+                    <td>1000</td>
+                    <td>0.01</td>
+                    <td style="text-align: right;">10.00</td>
+                </tr>
+                <tr>
+                    <td>Staples (box)</td>
+                    <td>100</td>
+                    <td>1.00</td>
+                    <td style="text-align: right;">100.00</td>
+                </tr>
+                <tr class="item-row">
+                    <td>Bond Paper (box)</td>
+                    <td>100</td>
+                    <td>1.00</td>
+                    <td style="text-align: right;">110.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right"><b>Subtotal</b></td>
+                    <td style="text-align: right;">110.00</td>
+                </tr>
+                <tr class="item-row">
+                    <td colspan="2" align="right"><b>Tax</b></td>
+                    <td>8%</td>
+                    <td style="text-align: right;">8.80</td>
+                </tr>
+                <tr class="header">
+                    <td colspan="3" align="right"><b>Grand Total</b></td>
+                    <td style="text-align: right;">118.80</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>
